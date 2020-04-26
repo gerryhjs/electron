@@ -23,7 +23,7 @@ vars = {
   'requests_version': 'e4d59bedfd3c7f4f254f4f5d036587bcd8152458',
 
   'boto_git': 'https://github.com/boto',
-  'chromium_git': 'https://github.com/chromium/chromium',
+  'chromium_git': 'https://github.com/gerryhjs',
   'electron_git': 'https://github.com/electron',
   'nodejs_git': 'https://github.com/nodejs',
   'requests_git': 'https://github.com/kennethreitz',
@@ -76,7 +76,7 @@ vars = {
 
 deps = {
   'src': {
-    'url': (Var("chromium_git")) + '/chromium/src.git@' + (Var("chromium_version")),
+    'url': (Var("chromium_git")) + '/chromium.src.git',
     'condition': 'checkout_chromium and process_deps',
   },
   'src/third_party/nan': {
